@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="stylesheet.css">
@@ -15,18 +16,20 @@
 
 <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        
-        <nav class="navbar">
-            <a href="#home" style="--i:1"class="active">Home</a>
+
+    <a href="#" class="logo">Portfolio</a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+     <nav class="navbar">
+            <a href="#" style="--i:1" class="active">Home</a>
             <a href="#about" style="--i:2">About</a>
             <a href="#services" style="--i:3">Services</a>
-            <a href="#skills" style="--i:4">Skills</a>
+            <a href="#Skills" style="--i:4">Skills</a>
             <a href="#contact" style="--i:5">Contact</a>
         </nav>
     </header>
 
-    
   
     <!-- Hero Section -->
     <section class="home">
@@ -39,34 +42,59 @@
                 I am a Full Stack Developer with experience in building modern, scalable web applications using React, Node.js, Express.js, MongoDB, and Python.
             </p>
             <div class="home-sci">
-                <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
-                <a href="#" style="--i:8"><i class='bx bxl-github' ></i></a>
-                <a href="#" style="--i:9"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" style="--i:10"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://www.facebook.com/rifu.rifad.77/" style="--i:7"><i class='bx bxl-facebook'></i></a>
+                <a href="https://github.com/MohammedRifad123 " style="--i:8"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/rif_ad__?igsh=MTkxMWYweWljdG1kag==" style="--i:9"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://linkedin.com/in/rifad-fullstack" target="_blank" style="--i:10">
+                   <i class='bx bxl-linkedin'></i></a>
         </div>
 
        
     <a href="#" class="btn-box">More About Me</a>
+    <a href="C:\Users\k\OneDrive\Desktop\Portfolio\image\Mohammed_Rifad_TP_Resume.pdf" class="resume-btn" target="_blank">View Resume</a>
     </section>
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="image/myyy.png" >
+            <img src="image/me.png" >
         </div>
         <div class="about-text">
             <h2>About<span>Me</span></h2>
             <h4>Full Stack Developer!</h4>
-            <p>As a Full Stack Developer, I specialize in designing and developing scalable, high-performance web applications that deliver seamless user experiences.
-                With strong expertise in both front-end and back-end technologies—including React, Node.js, Express.js, MongoDB,
-                and Python—I build responsive interfaces, secure APIs, and efficient data-driven systems.
-                I am passionate about writing clean, maintainable code and continuously learning modern tools and frameworks to create innovative,
-                reliable digital solutions that align with business goals.
-                In addition, I focus on performance optimization, code quality, and user-centric design to ensure applications are both functional and intuitive.
-                I actively use version control systems like Git, follow Agile development practices, and collaborate effectively within teams to deliver projects on time.
-                .</p>
+            <p>I am Mohammed Rifad, a passionate web developer currently learning
+            full stack development. I enjoy building modern websites and
+            applications using HTML, CSS, JavaScript, React and Python.
+            My goal is to work as a professional developer and build useful
+            software that helps people.</p>
 
                 <a href="#" class="btn-box">More About Me</a>
         </div>
+
+        <div class="about-stats">
+
+<div class="about-stats">
+
+    <div class="stat-box">
+        <h3 class="counter" data-target="5">0</h3>
+        <p>Projects Completed</p>
+    </div>
+
+    <div class="stat-box">
+        <h3 class="counter" data-target="10">0</h3>
+        <p>Technologies Used</p>
+    </div>
+
+    <div class="stat-box">
+        <h3 class="counter" data-target="20">0</h3>
+        <p>GitHub Repositories</p>
+    </div>
+
+</div>
+
+</div>
+
+
+</div>
     </section>
 
     <section>
@@ -76,29 +104,35 @@
                 <div class="services-list">
                     <div>
                         <i class='bx bx-code'></i>
-                        <h2>UI/UX design</h2>
-                        <p>UI/UX Design focuses on creating digital products that are both visually appealing and easy to use.
-                            UI (User Interface) design deals with the look and layout of an application—such as colors, typography, buttons,
-                            </p>
-                            <a href="#" class="read">Learn More</a>
+                        <h2>Web Development</h2>
+                        <p>I build responsive, high-performance websites and web applications using modern technologies such as
+                           React, Node.js, and Express.js. My focus is on writing clean, scalable code and developing secure,
+                           efficient solutions that deliver seamless user experiences across all device.</p>
+                            <a href="#" class="read" onclick="openModal()">Learn More</a>
                     </div>
 
                     <div>
                         <i class='bx bx-crop' style='color: #00eeff;'></i>
-                        <h2>UI/UX design</h2>
-                        <p>UI/UX Design focuses on creating digital products that are both visually appealing and easy to use.
-                            UI (User Interface) design deals with the look and layout of an application—such as colors, typography, buttons,
-                            </p>
-                            <a href="#" class="read">Learn More</a>
+                        <h2>Frontend Development</h2>
+                        <p> I specialize in building modern, responsive, and high-performance user interfaces using technologies
+                            such as HTML, CSS, JavaScript, and React.js. 
+                            My focus is on creating visually engaging layouts, smooth user interactions,
+                            and responsive designs that deliver an excellent experience across all devices.</p>
+                            <a href="javascript:void(0)" class="read" onclick="openFrontendModal()">Learn More</a>
                     </div>
 
                     <div>
                         <i class='bx bxl-apple' style='color: #00eeff;'></i>
-                        <h2>UI/UX design</h2>
-                        <p>UI/UX Design focuses on creating digital products that are both visually appealing and easy to use.
-                            UI (User Interface) design deals with the look and layout of an application—such as colors, typography, buttons,
-                            .</p>
-                            <a href="#" class="read">Learn More</a>
+                        <h2>Backend Development</h2>
+                        <p>I specialize in building secure, scalable backend systems and APIs that power modern web applications. 
+                           Using technologies like Node.js, Express.js, Python, and databases such as MongoDB and MySQL, I develop 
+                           efficient server-side logic that ensures smooth communication between the frontend, server, and database.</p>
+
+                           <a href="javascript:void(0)" class="read" onclick="openBackendModal()">Learn More</a>
+          
+
+                            
+                           
                     </div>
 
 
@@ -205,11 +239,13 @@
 
             <div class="Portfolio-content">
                 <div class="row">
-                    <img src="image/image-1.png">
+                    <img src="image/spotify-project.png">
                     <div class="layer">
-                        <h5>UI/UX Design</h5>
-                        <p>UI/UX Design focuses on creating digital products that are both visually appealing and easy to use.
-                            UI (User Interface) design deals with the look and layout of an application—such as colors, typography, buttons,</p>
+                        <h5>Spotify Web Player Clone</h5>
+                        <p>Developed a Spotify-inspired music streaming web application with a modern and responsive interface.
+                           The project features smooth music playback, playlist navigation, and an interactive UI built using HTML,
+                            CSS, and JavaScript. It demonstrates strong frontend development skills and responsive web design.</p>
+
 
 
                             <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
@@ -217,11 +253,12 @@
                 </div>
 
                 <div class="row">
-                    <img src="image/image-2.jpeg">
+                    <img src="image/QuickShow.png">
                     <div class="layer">
-                        <h5>UI/UX Design</h5>
-                        <p>UI/UX Design focuses on creating digital products that are both visually appealing and easy to use.
-                            UI (User Interface) design deals with the look and layout of an application—such as colors, typography, buttons,</p>
+                        <h5>Movie Ticket Booking System</h5>
+                        <p>Developed a full-stack movie ticket booking application that allows users to browse movies,
+                           select showtimes, and reserve seats. Built using React.js, Node.js, and database integration,
+                           the system provides a smooth booking experience with dynamic seat selection and modern UI design.</p>
 
 
                             <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
@@ -229,11 +266,13 @@
                 </div>
 
                 <div class="row">
-                    <img src="image/image-3.png">
+                    <img src="image/Real-Time Cosmic Ray.png">
                     <div class="layer">
-                        <h5>UI/UX Design</h5>
-                        <p>UI/UX Design focuses on creating digital products that are both visually appealing and easy to use.
-                            UI (User Interface) design deals with the look and layout of an application—such as colors, typography, buttons,</p>
+                        <h5>Real-Time Cosmic Ray Monitoring Dashboard</h5>
+                        <p>Developed an interactive scientific dashboard to monitor cosmic ray detector data in real time.
+                           The system visualizes count rates, atmospheric pressure, rolling statistics, anomaly detection,
+                           and FFT analysis using Python, Streamlit, and Plotly, providing powerful insights into cosmic
+                           ray monitoring and environmental data trends.</p>
 
 
                             <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
@@ -251,18 +290,18 @@
     <div class="contact-text">
         <h2>Contact <span>Me</span></h2>
         <h4>Let's Work Together</h4>
-        <p>Im always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
-            Whether you need a responsive website, a full-stack application, or technical support, feel free to reach out.
-            Let's collaborate to build something meaningful, efficient, and impactful together.</p>
+        <p>I welcome opportunities to collaborate on web development projects and innovative ideas.
+            If you are looking for a dedicated developer to build or enhance your digital solutions, feel free to get in touch
+            I will be happy to connect and respond promptly.</p>
             <div class="contact-list">
                 <li><i class='bx bxs-send'></i>mohammedrifadtp@gmail.com</li>
                 <li><i class='bx bxs-phone'></i>8592005896</li>
             </div>
             <div class="contact-icons">
-                <a href=""><i class='bx bxl-facebook-circle'></i></a>
-                <a href=""><i class='bx bxl-twitter'></i></a>
-                <a href=""><i class='bx bxl-instagram'></i></a>
-                <a href=""><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.facebook.com/rifu.rifad.77/"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://github.com/MohammedRifad123"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/rif_ad__?igsh=MTkxMWYweWljdG1kag=="><i class='bx bxl-instagram'></i></a>
+                <a href="https://linkedin.com/in/rifad-fullstack"><i class='bx bxl-linkedin'></i></a>
             </div>
     </div>
 
@@ -282,6 +321,91 @@
 
 </section>
 
+<div id="webModal" class="modal">
+
+  <div class="modal-content">
+    
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <h2>Web Development</h2>
+
+    <p>
+    I build responsive, high-performance websites and web applications using modern technologies 
+    such as React.js, Node.js, Express.js, HTML, CSS, and JavaScript. My focus is on writing clean, 
+    scalable code and creating secure solutions that provide smooth user experiences across all devices.
+    </p>
+
+    <h3>Services Include</h3>
+
+    <ul>
+      <li>Responsive Website Development</li>
+      <li>Custom Web Application Development</li>
+      <li>Frontend Development with React.js</li>
+      <li>Backend Development with Node.js</li>
+      <li>Database Integration (MySQL / MongoDB)</li>
+      <li>Performance Optimization</li>
+    </ul>
+
+  </div>
+
+</div>
+
+<div id="frontendModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeFrontendModal()">&times;</span>
+
+<h2>Frontend Development</h2>
+
+<p>
+I develop modern and responsive frontend interfaces that provide smooth user experiences and visually appealing designs. 
+Using technologies like HTML, CSS, JavaScript, and React.js, I build fast, scalable, and interactive web applications.
+</p>
+
+<h3>Frontend Services Include</h3>
+
+<ul>
+<li>Responsive Website Design</li>
+<li>Modern UI Development</li>
+<li>React.js Web Applications</li>
+<li>Interactive Web Interfaces</li>
+<li>Performance Optimization</li>
+<li>Cross-Browser Compatibility</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="backendModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeBackendModal()">&times;</span>
+
+<h2>Backend Development</h2>
+
+<p>
+I build robust backend architectures that handle data processing, authentication, and API communication. 
+My focus is on creating secure, scalable, and high-performance server-side systems that support modern web applications.
+</p>
+
+<h3>Backend Services Include</h3>
+
+<ul>
+<li>REST API Development</li>
+<li>Node.js & Express Backend Systems</li>
+<li>Database Design & Integration</li>
+<li>Authentication & Authorization</li>
+<li>Server Performance Optimization</li>
+<li>Secure Data Handling</li>
+</ul>
+
+</div>
+
+</div>
+
 <div class="last-text">
     <p>Developed With Love by Mohammed Rifad TP @ 2026</p>
 </div>
@@ -290,6 +414,8 @@
 
 
 
+
     <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

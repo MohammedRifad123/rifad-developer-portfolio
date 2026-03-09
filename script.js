@@ -1,37 +1,41 @@
+function openFrontendModal(){
+    document.getElementById("frontendModal").style.display = "block";
+}
 
-document.addEventListener("DOMContentLoaded", function () {
+function closeFrontendModal(){
+    document.getElementById("frontendModal").style.display = "none";
+}
 
-  const form = document.getElementById("contact-form");
 
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault();
+function openBackendModal(){
+document.getElementById("backendModal").style.display="block";
+}
 
-    const data = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      subject: document.getElementById("subject").value,
-      message: document.getElementById("message").value
+function closeBackendModal(){
+document.getElementById("backendModal").style.display="none";
+}
+
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+
+    const updateCounter = () => {
+
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+
+        const increment = target / 100;
+
+        if(count < target){
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCounter, 20);
+        }
+        else{
+            counter.innerText = target + "+";
+        }
+
     };
 
-    try {
-      const response = await fetch("http://localhost:5000/send", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      });
-
-      const result = await response.json();
-      alert(result.message);
-
-      form.reset();
-
-    } catch (error) {
-      alert("❌ Cannot connect to server");
-    }
-
-  });
+    updateCounter();
 
 });
-
