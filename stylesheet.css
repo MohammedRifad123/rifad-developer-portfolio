@@ -160,7 +160,7 @@ body {
         0 0 25px cyan, 0 0 50px cyan,
         0 0 100px cyan, 0 0 200px cyan
 }
-
+                                 /* About */
 
 .about {
     display: grid;
@@ -238,39 +238,79 @@ color:#ccc;
 letter-spacing:1px;
 }
 
-/* Mobile-View */
+
+
+/* ================= MOBILE ABOUT SECTION ================= */
 
 @media (max-width:768px){
 
 .about{
-flex-direction:column;
-text-align:center;
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:60px 20px;
+}
+
+/* Image */
+
+.about-img{
+    display:flex;
+    justify-content:center;
 }
 
 .about-img img{
-width:220px;
+    max-width:250px;
+    padding-bottom:0;
+    margin-bottom:20px;
 }
+
+/* Heading */
+
+.about-text h2{
+    font-size:34px;
+}
+
+.about-text h4{
+    font-size:20px;
+    margin:10px 0 15px;
+}
+
+/* Paragraph */
+
+.about-text p{
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:2rem;
+    padding:0 10px;
+}
+
+/* Stats boxes */
 
 .about-stats{
-justify-content:center;
-flex-wrap:wrap;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    justify-content:center;
 }
 
-}
-
-
-@media (max-width:768px){
-
-.about-stats{
-justify-content:center;
-}
+/* Stat Box Style */
 
 .stat-box{
-width:140px;
+    background:#081b29;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+.stat-box h3{
+    font-size:22px;
+    color:#0ef;
+}
+
+.stat-box p{
+    font-size:12px;
 }
 
 }
-
 
 
 
@@ -1283,19 +1323,24 @@ section{
 }
 
 
-/* MOBILE VIEW */
+/* ================= MOBILE VIEW ================= */
 
 @media (max-width: 768px){
 
+/* ---------- Header ---------- */
+
 .header{
-    padding:20px 5%;
+    padding:15px 6%;
 }
 
 #menu-icon{
     display:block;
-    font-size:28px;
+    font-size:30px;
     cursor:pointer;
+    color:#0ef;
 }
+
+/* ---------- Mobile Navbar ---------- */
 
 .navbar{
     position:absolute;
@@ -1306,40 +1351,147 @@ section{
     display:none;
     flex-direction:column;
     text-align:center;
+    padding:20px 0;
+    box-shadow:0 8px 20px rgba(0,0,0,0.4);
 }
 
 .navbar a{
     display:block;
-    margin:15px 0;
+    margin:12px 0;
+    font-size:18px;
 }
 
 .navbar.active{
     display:flex;
 }
 
+
+/* ---------- Home Section ---------- */
+
 .home{
+    display:flex;
     flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
+    padding:120px 20px 60px;
+}
+
+.home-content{
+    max-width:100%;
+}
+
+.home-content h3{
+    font-size:18px;
 }
 
 .home-content h1{
-    font-size:32px;
+    font-size:34px;
+    font-weight:700;
+    margin:10px 0;
 }
+
+.home-content p{
+    font-size:14px;
+    line-height:1.6;
+    margin:15px 0 25px;
+}
+
+/* Social icons */
+
+.home-sci{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.home-sci a{
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    border:2px solid #0ef;
+    font-size:18px;
+}
+
+
+/* Buttons */
+
+.btn-box,
+.resume-btn{
+    display:block;
+    width:200px;
+    margin:10px auto;
+    text-align:center;
+}
+
+
+/* ---------- About Section ---------- */
 
 .about{
     flex-direction:column;
+    text-align:center;
+    padding:60px 20px;
 }
 
 .about-img img{
-    width:250px;
+    width:220px;
+    margin-bottom:20px;
 }
+
+
+/* ---------- Services ---------- */
 
 .services-list{
+    display:grid;
     grid-template-columns:1fr;
+    gap:25px;
 }
 
+
+/* ---------- Skills ---------- */
+
+.skills-wrapper{
+    flex-direction:column;
+}
+
+.container1{
+    width:100%;
+}
+
+
+/* ---------- Projects ---------- */
+
 .Portfolio-content{
+    display:grid;
     grid-template-columns:1fr;
+    gap:25px;
+}
+
+.row img{
+    border-radius:10px;
+}
+
+
+/* ---------- Contact ---------- */
+
+.Contact{
+    flex-direction:column;
+}
+
+.contact-text{
+    text-align:center;
+}
+
+.contact-icons{
+    justify-content:center;
+}
+
+.contact-form{
+    margin-top:30px;
 }
 
 }
