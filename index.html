@@ -1,421 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Mohammed Rifad - Full Stack Developer</title>
 
-    <link rel="stylesheet" href="stylesheet.css">
+    <!-- Premium CSS Design System -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Boxicons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
     <!-- Typed.js -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <style>
+        /* Small additions that make images work well with the premium cards */
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="header">
+    <!-- Ambient Background Effects -->
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
 
-    <a href="#" class="logo">Portfolio</a>
+    <!-- Navigation -->
+    <nav class="glass-nav" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Rifad<span class="dot">.</span></a>
 
-    <i class='bx bx-menu' id="menu-icon"></i>
+            <div class="nav-links">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
 
-     <nav class="navbar">
-            <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#about" style="--i:2">About</a>
-            <a href="#services" style="--i:3">Services</a>
-            <a href="#Skills" style="--i:4">Skills</a>
-            <a href="#contact" style="--i:5">Contact</a>
-        </nav>
-    </header>
+            <button class="mobile-menu-btn" id="menu-icon">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
+    </nav>
 
-  
     <!-- Hero Section -->
-    <section class="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Mohammed Rifad</h1>
-            <h3>And I'm a <span class="text"></span></h3>
+    <section class="hero section-padding" id="home">
+        <div class="hero-content reveal">
+            <h4 class="greeting">Hello, It's Me</h4>
+            <h1 class="main-title">Mohammed Rifad</h1>
+            <h3 class="greeting"
+                style="color: var(--text-primary); text-transform:none; font-size: 1.5rem; letter-spacing: 0; margin-bottom: 20px;">
+                And I'm a <span class="highlight text"></span>
+            </h3>
 
-            <p class="desc">
-                I am a Full Stack Developer with experience in building modern, scalable web applications using React, Node.js, Express.js, MongoDB, and Python.
+            <p class="hero-description">
+                I am a Full Stack Developer with experience in building modern, scalable web applications using React,
+                Node.js, Express.js, MongoDB, and Python.
             </p>
-            <div class="home-sci">
-                <a href="https://www.facebook.com/rifu.rifad.77/" style="--i:7"><i class='bx bxl-facebook'></i></a>
-                <a href="https://github.com/MohammedRifad123 " style="--i:8"><i class='bx bxl-github' ></i></a>
-                <a href="https://www.instagram.com/rif_ad__?igsh=MTkxMWYweWljdG1kag==" style="--i:9"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://linkedin.com/in/rifad-fullstack" target="_blank" style="--i:10">
-                   <i class='bx bxl-linkedin'></i></a>
+
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">More About Me</a>
+                <a href="image/Mohammed_Rifad_TP_Resume.pdf" class="btn btn-secondary" target="_blank">View Resume</a>
+            </div>
         </div>
 
-       
-    <a href="#" class="btn-box">More About Me</a>
-    <a href="C:\Users\k\OneDrive\Desktop\Portfolio\image\Mohammed_Rifad_TP_Resume.pdf" class="resume-btn" target="_blank">View Resume</a>
-    </section>
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="image/me.png" >
-        </div>
-        <div class="about-text">
-            <h2>About<span>Me</span></h2>
-            <h4>Full Stack Developer!</h4>
-            <p>I am Mohammed Rifad, a passionate web developer currently learning
-            full stack development. I enjoy building modern websites and
-            applications using HTML, CSS, JavaScript, React and Python.
-            My goal is to work as a professional developer and build useful
-            software that helps people.</p>
-
-                <a href="#" class="btn-box">More About Me</a>
-        </div>
-
-        <div class="about-stats">
-
-<div class="about-stats">
-
-    <div class="stat-box">
-        <h3 class="counter" data-target="5">0</h3>
-        <p>Projects Completed</p>
-    </div>
-
-    <div class="stat-box">
-        <h3 class="counter" data-target="10">0</h3>
-        <p>Technologies Used</p>
-    </div>
-
-    <div class="stat-box">
-        <h3 class="counter" data-target="20">0</h3>
-        <p>GitHub Repositories</p>
-    </div>
-
-</div>
-
-</div>
-
-
-</div>
-    </section>
-
-    <section>
-        <div class="services" id="services">
-            <div class="container">
-                <h1 class="sub-title">My <span>Services</span></h1>
-                <div class="services-list">
-                    <div>
-                        <i class='bx bx-code'></i>
-                        <h2>Web Development</h2>
-                        <p>I build responsive, high-performance websites and web applications using modern technologies such as
-                           React, Node.js, and Express.js. My focus is on writing clean, scalable code and developing secure,
-                           efficient solutions that deliver seamless user experiences across all device.</p>
-                            <a href="#" class="read" onclick="openModal()">Learn More</a>
+        <div class="hero-visual reveal delay-1">
+            <div class="profile-card glass-card">
+                <div class="profile-image-placeholder" style="padding:0; overflow:hidden;">
+                    <img src="image/hero-suit-uploaded.jpg" alt="Mohammed Rifad" class="profile-img"
+                        onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'bx bx-user\'></i>';">
+                </div>
+                <div class="profile-info">
+                    <h3>Mohammed Rifad TP</h3>
+                    <p>Full Stack Developer</p>
+                    <div class="tech-stack-mini">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">MongoDB</span>
                     </div>
-
-                    <div>
-                        <i class='bx bx-crop' style='color: #00eeff;'></i>
-                        <h2>Frontend Development</h2>
-                        <p> I specialize in building modern, responsive, and high-performance user interfaces using technologies
-                            such as HTML, CSS, JavaScript, and React.js. 
-                            My focus is on creating visually engaging layouts, smooth user interactions,
-                            and responsive designs that deliver an excellent experience across all devices.</p>
-                            <a href="javascript:void(0)" class="read" onclick="openFrontendModal()">Learn More</a>
-                    </div>
-
-                    <div>
-                        <i class='bx bxl-apple' style='color: #00eeff;'></i>
-                        <h2>Backend Development</h2>
-                        <p>I specialize in building secure, scalable backend systems and APIs that power modern web applications. 
-                           Using technologies like Node.js, Express.js, Python, and databases such as MongoDB and MySQL, I develop 
-                           efficient server-side logic that ensures smooth communication between the frontend, server, and database.</p>
-
-                           <a href="javascript:void(0)" class="read" onclick="openBackendModal()">Learn More</a>
-          
-
-                            
-                           
-                    </div>
-
-
                 </div>
             </div>
         </div>
     </section>
 
-    <h1 class="sub-title">My <span>Skills</span></h1>
-
-    <h1 class="heading1">Technical Skills</h1>
-
-<div class="skills-wrapper">
-    <div class="container1">
-        <div class="Technical-bars">
-
-            <div class="bar">
-                <i style="color: #c95d2e" class='bx bxl-html5'></i>
-                <div class="info"><span>HTML</span></div>
-                <div class="progress-line html"><span></span></div>
-            </div>
-
-            <div class="bar">
-                <i style="color: #147bbc" class='bx bxl-css3'></i>
-                <div class="info"><span>CSS</span></div>
-                <div class="progress-line css"><span></span></div>
-            </div>
-
-            <div class="bar">
-                <i style="color: #b0bc1e" class='bx bxl-javascript'></i>
-                <div class="info"><span>JavaScript</span></div>
-                <div class="progress-line javascript"><span></span></div>
-            </div>
-
-            <div class="bar">
-                <i style="color: #c32ec9" class='bx bxl-python'></i>
-                <div class="info"><span>Python</span></div>
-                <div class="progress-line python"><span></span></div>
-            </div>
-
-            <div class="bar">
-                <i style="color: #69bcbc" class='bx bxl-react'></i>
-                <div class="info"><span>React</span></div>
-                <div class="progress-line react"><span></span></div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <h1 class="heading1">Professional Skills</h1>
-
-    <div class="radial-bars">
-
-        <!-- Creativity -->
-        <div class="radial-bar">
-            <svg viewBox="0 0 200 200">
-                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">90%</div>
-            <div class="text">Creativity</div>
+    <!-- About Section -->
+    <section class="section-padding" id="about">
+        <div class="section-header reveal">
+            <h2>About <span class="highlight">Me</span></h2>
+            <p>Passionate developer dedicated to building scalable and modern web applications</p>
         </div>
 
-        <!-- Communication -->
-        <div class="radial-bar">
-            <svg viewBox="0 0 200 200">
-                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">85%</div>
-            <div class="text">Communication</div>
-        </div>
-
-        <!-- Problem Solving -->
-        <div class="radial-bar">
-            <svg viewBox="0 0 200 200">
-                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">75%</div>
-            <div class="text">Problem Solving</div>
-        </div>
-
-        <!-- Teamwork -->
-        <div class="radial-bar">
-            <svg viewBox="0 0 200 200">
-                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">85%</div>
-            <div class="text">Teamwork</div>
-        </div>
-
-     </div>
-</section>
-
-
-<section>
-    <div class="Portfolio" id="Portfolio" >
-        <div class="main-text" id="project">
-            <h2>Latest<span>Project</span></h2>
-
-            <div class="Portfolio-content">
-                <div class="row">
-                    <img src="image/spotify-project.png">
-                    <div class="layer">
-                        <h5>Spotify Web Player Clone</h5>
-                        <p>Developed a Spotify-inspired music streaming web application with a modern and responsive interface.
-                           The project features smooth music playback, playlist navigation, and an interactive UI built using HTML,
-                            CSS, and JavaScript. It demonstrates strong frontend development skills and responsive web design.</p>
-
-
-
-                            <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+        <div class="about-grid">
+            <div class="reveal">
+                <h3 class="about-heading">Full Stack Developer!</h3>
+                <p class="about-description">
+                    I am Mohammed Rifad, a passionate web developer currently learning full stack development.
+                    I enjoy building modern websites and applications using HTML, CSS, JavaScript, React and Python.
+                    My goal is to work as a professional developer and build useful software that helps people.
+                </p>
+                <div class="stats-grid">
+                    <div class="glass-card stat-card">
+                        <h3 class="highlight counter" data-target="15">0</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <h3 class="highlight counter" data-target="10">0</h3>
+                        <p>Technologies</p>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <h3 class="highlight counter" data-target="20">0</h3>
+                        <p>Repositories</p>
                     </div>
                 </div>
-
-                <div class="row">
-                    <img src="image/QuickShow.png">
-                    <div class="layer">
-                        <h5>Movie Ticket Booking System</h5>
-                        <p>Developed a full-stack movie ticket booking application that allows users to browse movies,
-                           select showtimes, and reserve seats. Built using React.js, Node.js, and database integration,
-                           the system provides a smooth booking experience with dynamic seat selection and modern UI design.</p>
-
-
-                            <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <img src="image/Real-Time Cosmic Ray.png">
-                    <div class="layer">
-                        <h5>Real-Time Cosmic Ray Monitoring Dashboard</h5>
-                        <p>Developed an interactive scientific dashboard to monitor cosmic ray detector data in real time.
-                           The system visualizes count rates, atmospheric pressure, rolling statistics, anomaly detection,
-                           and FFT analysis using Python, Streamlit, and Plotly, providing powerful insights into cosmic
-                           ray monitoring and environmental data trends.</p>
-
-
-                            <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                    </div>
-                </div>
-
-
+            </div>
+            <div class="reveal delay-1 about-img-wrapper">
+                <img src="image/about-suit2-uploaded.jpg" alt="About Image" class="about-img">
             </div>
         </div>
     </section>
 
+    <!-- Services Section -->
+    <section class="section-padding" id="services">
+        <div class="section-header reveal">
+            <h2>My <span class="highlight">Services</span></h2>
+            <p>What I can do for you</p>
+        </div>
 
-
-<section class="Contact" id="contact">
-    <div class="contact-text">
-        <h2>Contact <span>Me</span></h2>
-        <h4>Let's Work Together</h4>
-        <p>I welcome opportunities to collaborate on web development projects and innovative ideas.
-            If you are looking for a dedicated developer to build or enhance your digital solutions, feel free to get in touch
-            I will be happy to connect and respond promptly.</p>
-            <div class="contact-list">
-                <li><i class='bx bxs-send'></i>mohammedrifadtp@gmail.com</li>
-                <li><i class='bx bxs-phone'></i>8592005896</li>
+        <div class="projects-grid">
+            <div class="glass-card project-content reveal">
+                <i class='bx bx-code highlight' style="font-size: 3rem; margin-bottom: 20px;"></i>
+                <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Web Development</h3>
+                <p style="color: var(--text-secondary); line-height: 1.6;">
+                    I build responsive, high-performance websites and web applications using modern technologies such as
+                    React, Node.js, and Express.js. My focus is on writing clean, scalable code.
+                </p>
             </div>
-            <div class="contact-icons">
-                <a href="https://www.facebook.com/rifu.rifad.77/"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="https://github.com/MohammedRifad123"><i class='bx bxl-github'></i></a>
-                <a href="https://www.instagram.com/rif_ad__?igsh=MTkxMWYweWljdG1kag=="><i class='bx bxl-instagram'></i></a>
-                <a href="https://linkedin.com/in/rifad-fullstack"><i class='bx bxl-linkedin'></i></a>
+
+            <div class="glass-card project-content reveal delay-1">
+                <i class='bx bx-crop highlight' style="font-size: 3rem; margin-bottom: 20px;"></i>
+                <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Frontend Development</h3>
+                <p style="color: var(--text-secondary); line-height: 1.6;">
+                    I specialize in building modern, responsive, and high-performance user interfaces using technologies
+                    such as HTML, CSS, JavaScript, and React.js.
+                </p>
             </div>
-    </div>
 
-    <div class="contact-form">
-        <form action="">
-            <input type="" placeholder="Enter Your Name" required>
-            <input type="email" placeholder="Enter Your Email" required>
+            <div class="glass-card project-content reveal delay-2">
+                <i class='bx bx-server highlight' style="font-size: 3rem; margin-bottom: 20px;"></i>
+                <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Backend Development</h3>
+                <p style="color: var(--text-secondary); line-height: 1.6;">
+                    I build secure, scalable backend systems and APIs that power modern web applications using
+                    Node.js, Express.js, Python, MongoDB and MySQL.
+                </p>
+            </div>
+        </div>
+    </section>
 
-            <input type="" placeholder="Enter Your Subject">
-            <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
-        <input type="submit" value="submit" class="send">
-        
-        </form>
-    </div>
+    <!-- Skills Section -->
+    <section class="section-padding" id="skills">
+        <div class="section-header reveal">
+            <h2>Technical <span class="highlight">Skills</span></h2>
+            <p>Tools and technologies I work with</p>
+        </div>
 
-   
+        <div class="glass-card skills-card">
+            <div class="skills-list">
+                <div class="skill-item reveal">
+                    <div class="skill-header">
+                        <span class="skill-title">
+                            <i class='bx bxl-html5' style="color: #e34c26;"></i> HTML
+                        </span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
 
-</section>
+                <div class="skill-item reveal delay-1">
+                    <div class="skill-header">
+                        <span class="skill-title">
+                            <i class='bx bxl-css3' style="color: #264de4;"></i> CSS
+                        </span>
+                        <span class="skill-percentage">60%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 60%;"></div>
+                    </div>
+                </div>
 
-<div id="webModal" class="modal">
+                <div class="skill-item reveal">
+                    <div class="skill-header">
+                        <span class="skill-title">
+                            <i class='bx bxl-javascript' style="color: #f0db4f;"></i> JavaScript
+                        </span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
 
-  <div class="modal-content">
-    
-    <span class="close" onclick="closeModal()">&times;</span>
+                <div class="skill-item reveal delay-1">
+                    <div class="skill-header">
+                        <span class="skill-title">
+                            <i class='bx bxl-python' style="color: #306998;"></i> Python
+                        </span>
+                        <span class="skill-percentage">50%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 50%;"></div>
+                    </div>
+                </div>
 
-    <h2>Web Development</h2>
+                <div class="skill-item reveal">
+                    <div class="skill-header">
+                        <span class="skill-title">
+                            <i class='bx bxl-react' style="color: #61dbfb;"></i> React
+                        </span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <p>
-    I build responsive, high-performance websites and web applications using modern technologies 
-    such as React.js, Node.js, Express.js, HTML, CSS, and JavaScript. My focus is on writing clean, 
-    scalable code and creating secure solutions that provide smooth user experiences across all devices.
-    </p>
+    <!-- Projects Section -->
+    <section class="section-padding" id="projects">
+        <div class="section-header reveal">
+            <h2>Latest <span class="highlight">Projects</span></h2>
+            <p>Some of my recent work</p>
+        </div>
 
-    <h3>Services Include</h3>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="glass-card project-card reveal">
+                <div class="project-image">
+                    <img src="image/spotify-project.png"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        alt="Spotify Web Player">
+                    <div class="img-placeholder" style="display: none;">
+                        <i class='bx bx-music'></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="#" class="view-btn"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Web App</span>
+                    <h3>Spotify Web Player Clone</h3>
+                    <p>Developed a Spotify-inspired music streaming application with a modern and responsive interface,
+                        smooth playback, and playlist navigation.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
 
-    <ul>
-      <li>Responsive Website Development</li>
-      <li>Custom Web Application Development</li>
-      <li>Frontend Development with React.js</li>
-      <li>Backend Development with Node.js</li>
-      <li>Database Integration (MySQL / MongoDB)</li>
-      <li>Performance Optimization</li>
-    </ul>
+            <!-- Project 2 -->
+            <div class="glass-card project-card reveal delay-1">
+                <div class="project-image">
+                    <img src="image/QuickShow.png"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        alt="Movie Ticket Booking">
+                    <div class="img-placeholder" style="display: none;">
+                        <i class='bx bx-film'></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="#" class="view-btn"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Full Stack</span>
+                    <h3>Movie Ticket Booking System</h3>
+                    <p>A full-stack movie ticket booking application to browse movies, select showtimes, and reserve
+                        seats with dynamic selection.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
 
-  </div>
+            <!-- Project 3 -->
+            <div class="glass-card project-card reveal delay-2">
+                <div class="project-image">
+                    <img src="image/Real-Time Cosmic Ray.png"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        alt="Cosmic Ray Dashboard">
+                    <div class="img-placeholder" style="display: none;">
+                        <i class='bx bx-chart'></i>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="#" class="view-btn"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-category">Data Science</span>
+                    <h3>Real-Time Cosmic Ray Dashboard</h3>
+                    <p>An interactive scientific dashboard to monitor cosmic ray detector data in real time with anomaly
+                        detection and FFT analysis.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>Plotly</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</div>
+    <!-- Contact Section -->
+    <section class="section-padding" id="contact">
+        <div class="section-header reveal">
+            <h2>Contact <span class="highlight">Me</span></h2>
+            <p>Let's Work Together</p>
+        </div>
 
-<div id="frontendModal" class="modal">
+        <div class="glass-card contact-container reveal">
+            <div class="contact-info">
+                <h2>Get in touch</h2>
+                <p>I welcome opportunities to collaborate on web development projects and innovative ideas. Feel free to
+                    reach out!</p>
 
-<div class="modal-content">
+                <div class="contact-methods">
+                    <div class="method-item">
+                        <div class="method-icon"><i class='bx bx-envelope'></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:mohammedrifadtp@gmail.com">mohammedrifadtp@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="method-item">
+                        <div class="method-icon"><i class='bx bx-phone'></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>8592005896</p>
+                        </div>
+                    </div>
+                </div>
 
-<span class="close" onclick="closeFrontendModal()">&times;</span>
+                <div class="social-links">
+                    <a href="https://github.com/MohammedRifad123" class="social-btn"><i class='bx bxl-github'></i></a>
+                    <a href="https://linkedin.com/in/rifad-fullstack" class="social-btn"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/rif_ad__?igsh=MTkxMWYweWljdG1kag==" class="social-btn"><i
+                            class='bx bxl-instagram'></i></a>
+                    <a href="https://www.facebook.com/rifu.rifad.77/" class="social-btn"><i
+                            class='bx bxl-facebook'></i></a>
+                </div>
+            </div>
 
-<h2>Frontend Development</h2>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="contact-name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="contact-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea id="contact-message" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">Send Message <i
+                        class='bx bx-send'></i></button>
+                <div id="form-feedback" style="margin-top: 15px; font-weight: 500; display: none; text-align: center;"></div>
+            </form>
+        </div>
+    </section>
 
-<p>
-I develop modern and responsive frontend interfaces that provide smooth user experiences and visually appealing designs. 
-Using technologies like HTML, CSS, JavaScript, and React.js, I build fast, scalable, and interactive web applications.
-</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content reveal">
+            <div class="footer-logo">Rifad<span class="dot">.</span></div>
+            <p>&copy; 2026 Mohammed Rifad TP. All rights reserved.</p>
+        </div>
+    </footer>
 
-<h3>Frontend Services Include</h3>
-
-<ul>
-<li>Responsive Website Design</li>
-<li>Modern UI Development</li>
-<li>React.js Web Applications</li>
-<li>Interactive Web Interfaces</li>
-<li>Performance Optimization</li>
-<li>Cross-Browser Compatibility</li>
-</ul>
-
-</div>
-
-</div>
-
-<div id="backendModal" class="modal">
-
-<div class="modal-content">
-
-<span class="close" onclick="closeBackendModal()">&times;</span>
-
-<h2>Backend Development</h2>
-
-<p>
-I build robust backend architectures that handle data processing, authentication, and API communication. 
-My focus is on creating secure, scalable, and high-performance server-side systems that support modern web applications.
-</p>
-
-<h3>Backend Services Include</h3>
-
-<ul>
-<li>REST API Development</li>
-<li>Node.js & Express Backend Systems</li>
-<li>Database Design & Integration</li>
-<li>Authentication & Authorization</li>
-<li>Server Performance Optimization</li>
-<li>Secure Data Handling</li>
-</ul>
-
-</div>
-
-</div>
-
-<div class="last-text">
-    <p>Developed With Love by Mohammed Rifad TP @ 2026</p>
-</div>
-<a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
-
-
-
-
-
-    <script src="main.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
